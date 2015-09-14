@@ -73,4 +73,5 @@ while len(links_pagina)>0:
     driver.get('http://ssp.gob.mx:80/extraviadosWeb/portals/extraviados.portal?_nfpb=true&_st=&_windowLabel=Extra_FlowController_1&Extra_FlowController_1_actionOverride=%2FConsulta%2FExtra_Flow%2Fsiguientes')
     soup=BeautifulSoup(driver.page_source,"lxml")
     links_pagina = get_links(soup)
+df_lista_registros = pandas.DataFrame(lista_registros)
 df_lista_registros.to_csv("mujeres_ninas_mayores.csv", quoting=csv.QUOTE_ALL)
