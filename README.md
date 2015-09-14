@@ -7,4 +7,4 @@ Code to scrap sites related to Women missing in México.
 
 ##License
 
-Code licensed under the "Libre uso MX" license.
+Code licensed under the "Creative Commons Attribution 3.0" license.
