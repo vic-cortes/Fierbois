@@ -3,18 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import requests
 import pandas
-
-def get_links(soup):
-    links_pagina = []
-    for link in soup.find_all('a'):
-        direccion_link = link.get('href',None)
-        try: 
-            if "Extra_FlowController_1id" in direccion_link: 
-                if direccion_link not in links_pagina:
-                    links_pagina.append(direccion_link)
-        except:
-            print("")
-    return links_pagina
+import csv
 
 def clean_string(input_string):
     input_string =str(input_string)
